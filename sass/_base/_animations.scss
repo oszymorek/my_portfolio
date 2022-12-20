@@ -1,0 +1,28 @@
+@keyframes lineGrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 2.4rem;
+  }
+}
+
+@keyframes rotateFigure {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mymove {
+  from {
+    top: -4rem;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}

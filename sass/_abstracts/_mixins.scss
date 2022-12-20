@@ -1,0 +1,35 @@
+@mixin focusInfo {
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(72%) saturate(526%)
+      hue-rotate(82deg) brightness(101%) contrast(104%);
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == notebook {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

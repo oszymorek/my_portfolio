@@ -1,0 +1,25 @@
+.info__page {
+  margin-bottom: 6rem;
+
+  &--line {
+    width: 10rem;
+    height: 0.1rem;
+    background-color: $color-primary;
+  }
+}
+
+.info__page--start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.info__page--end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}

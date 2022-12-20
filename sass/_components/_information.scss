@@ -1,0 +1,35 @@
+.info {
+  position: fixed;
+  bottom: 0;
+  right: 1.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(notebook) {
+    display: none;
+  }
+
+  &__img {
+    list-style: none;
+
+    &__list {
+      &--logo {
+        height: 2.8rem;
+        margin-bottom: 1rem;
+        @include focusInfo;
+
+        @include respond(notebook) {
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 0.2rem;
+    height: 30rem;
+    background-color: $color-primary;
+  }
+}

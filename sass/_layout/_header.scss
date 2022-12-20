@@ -1,0 +1,101 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: $color-primary-background;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 7.2rem;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+
+      &__img {
+        height: 4.8rem;
+        width: 4.8rem;
+        transition: 0.3s;
+
+        @include respond(notebook) {
+          height: 5.4rem;
+          width: 5.4rem;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 5.6rem;
+      z-index: 2;
+
+      &__item {
+        font-size: 2rem;
+        list-style: none;
+
+        &--link {
+          position: relative;
+          color: $color-white;
+          font-size: 1.4rem;
+          text-decoration: none;
+          transition: 0.3s;
+
+          @include respond(notebook) {
+            font-size: 2rem;
+          }
+
+          &:hover {
+            color: $color-primary;
+          }
+
+          &:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 1px;
+            background-color: $color-primary;
+            animation: lineGrow 0.3s;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+    }
+
+    &__link {
+      &--btn {
+        background-color: transparent;
+        font-family: inherit;
+        border: none;
+        color: $color-white;
+        margin-left: 3.6rem;
+      }
+    }
+  }
+  .header__btn {
+    font-family: inherit;
+    background-color: transparent;
+    align-self: start;
+    border: none;
+    color: $color-primary;
+    margin-top: 3.2rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color-primary-background;
+    z-index: 1;
+    animation: mymove 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,269 @@
+#header {
+  .header__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    color: $color-white;
+    top: 40%;
+
+    @include respond(tablet) {
+      display: block;
+      width: 100%;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .heading__primary {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 4px;
+
+      @include respond(notebook) {
+        font-size: 6.2rem;
+      }
+      @include respond(tablet) {
+        gap: 1.8rem;
+      }
+    }
+
+    .heading__secondary {
+      width: 75%;
+      margin-top: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      @include respond(notebook) {
+        font-size: 1.8rem;
+      }
+      @include respond(tablet) {
+        display: block;
+        margin: 1.2rem auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#section--1 {
+  .about__paragraph {
+    position: relative;
+    align-self: stretch;
+    font-family: "Montserrat", sans-serif;
+    color: $color-white;
+    font-size: 1.8rem;
+    padding-right: 18rem;
+    width: 50%;
+    letter-spacing: 2.4px;
+    line-height: 3rem;
+    font-weight: 200;
+
+    @include respond(notebook) {
+      width: 100%;
+      padding-right: 0;
+      font-size: 2.2rem;
+    }
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
+
+    &--enter {
+      display: block;
+      margin-bottom: 2rem;
+      &::before {
+        content: "\A";
+        white-space: pre;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .characteristics__figure__paragraph {
+    font-size: 1.2rem;
+    color: $color-white;
+    margin-top: 1.4rem;
+    letter-spacing: 1.4px;
+    text-align: justify;
+    font-weight: 200;
+
+    @include respond(notebook) {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    @include respond(tablet) {
+      font-weight: 200;
+    }
+    @include respond(phone) {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+  .characteristics__figure__desc {
+    font-size: 1.4rem;
+
+    @include respond(notebook) {
+      font-size: 1.6rem;
+    }
+    @include respond(phone) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+#section--2 {
+  .knowledge__container {
+    &__box {
+      color: $color-white;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 1.8px;
+      text-align: justify;
+
+      &--lang {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+
+        @include respond(notebook) {
+          font-size: 2.4rem;
+        }
+        @include respond(tablet) {
+          font-size: 3rem;
+        }
+        @include respond(phone) {
+          font-size: 3.4rem;
+        }
+      }
+
+      &--paragraph {
+        font-size: 1.4rem;
+        font-weight: 100;
+        line-height: 1.6;
+
+        @include respond(notebook) {
+          font-size: 2.4rem;
+        }
+        @include respond(phone) {
+          font-size: 3.2rem;
+        }
+      }
+
+      &--level {
+        @include respond(notebook) {
+          font-size: 1.8rem;
+        }
+        @include respond(phone) {
+          font-size: 2.4rem;
+        }
+      }
+
+      &--learn {
+        font-size: 4rem;
+        font-weight: bold;
+        opacity: 0.2;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        @include respond(notebook) {
+          font-size: 5.6rem;
+        }
+        @include respond(tablet) {
+          font-size: 5.4rem;
+        }
+        @include respond(phone) {
+          font-size: 6.2rem;
+        }
+      }
+    }
+  }
+}
+
+#section--3 {
+  .slider {
+    &__content {
+      &__descp {
+        color: $color-description;
+        font-weight: 300;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1.4px;
+
+        &--type {
+          font-size: 1.2rem;
+
+          @include respond(notebook) {
+            font-size: 1.4rem;
+          }
+          @include respond(tablet) {
+            font-size: 1.8rem;
+          }
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+
+        &--name {
+          font-size: 2.4rem;
+
+          @include respond(notebook) {
+            font-size: 2.6rem;
+          }
+          @include respond(tablet) {
+            font-size: 2.8rem;
+          }
+        }
+
+        &--characteristics {
+          font-size: 1.4rem;
+
+          @include respond(notebook) {
+            font-size: 1.6rem;
+          }
+          @include respond(tablet) {
+            font-size: 1.8rem;
+          }
+        }
+
+        &--span {
+          font-size: 1.4rem;
+          margin-top: 2rem;
+
+          @include respond(notebook) {
+            font-size: 1.6rem;
+          }
+        }
+
+        &--points {
+          font-family: "Roboto Mono", sans-serif;
+          font-size: 1.2rem;
+          margin-left: 2rem;
+          @include respond(notebook) {
+            font-size: 1.4rem;
+          }
+          @include respond(tablet) {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.4rem;
+  color: $color-white;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  @include respond(notebook) {
+    font-size: 2rem;
+  }
+  @include respond(tablet) {
+    font-size: 2.4rem;
+  }
+}

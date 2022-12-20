@@ -1,0 +1,75 @@
+.shape {
+  padding: 0 7.2rem;
+  position: absolute;
+  height: 2.6rem;
+  animation: rotateFigure 30s infinite;
+
+  &:nth-child(1) {
+    top: 18%;
+    right: 23%;
+
+    @include respond(tablet) {
+      top: 25%;
+    }
+  }
+
+  &:nth-child(2) {
+    top: 30%;
+    left: 0;
+
+    @include respond(tablet) {
+      left: 5%;
+      top: 40%;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 30%;
+    left: 55%;
+
+    @include respond(tablet) {
+      left: 20%;
+      top: 25%;
+    }
+  }
+
+  &:nth-child(4) {
+    top: 70%;
+    left: 85%;
+
+    @include respond(tablet) {
+      left: 90%;
+      top: 40%;
+    }
+  }
+
+  &:nth-child(5) {
+    top: 53%;
+    left: 65%;
+
+    @include respond(tablet) {
+      top: 65%;
+      left: 85%;
+    }
+  }
+
+  &:nth-child(6) {
+    top: 22%;
+    left: 38%;
+
+    @include respond(tablet) {
+      top: 25%;
+      left: 50%;
+    }
+  }
+
+  &:nth-child(7) {
+    top: 45%;
+    left: 80%;
+
+    @include respond(tablet) {
+      top: 65%;
+      left: 10%;
+    }
+  }
+}

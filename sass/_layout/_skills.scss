@@ -1,0 +1,72 @@
+#section--2 {
+  .knowledge__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    column-gap: 7.2rem;
+    row-gap: 7.2rem;
+
+    @include respond(notebook) {
+      grid-template-columns: repeat(2, minmax(312px, 1fr));
+    }
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 424px);
+      justify-content: center;
+    }
+    @include respond(phone-small) {
+      grid-template-columns: repeat(1, 312px);
+    }
+
+    &__box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+      height: 31.2rem;
+      padding: 1.8rem;
+      background-color: $color-card;
+      border-radius: 1rem;
+      transition: all 0.5s;
+
+      @include respond(notebook) {
+        height: 48rem;
+        padding: 2.8rem;
+      }
+      @include respond(tablet) {
+        padding: 3.2rem;
+      }
+      @include respond(phone) {
+        height: 62rem;
+        border-radius: 3rem;
+        padding: 3.8rem;
+      }
+
+      &:hover {
+        transform: translateY(-1.4rem);
+      }
+
+      &--logo {
+        position: absolute;
+        width: 6.2rem;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -30%);
+      }
+
+      &--level {
+        margin-top: auto;
+      }
+
+      &--learn {
+        position: absolute;
+        top: 45%;
+      }
+    }
+  }
+  .more__skills {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 6rem auto;
+  }
+}

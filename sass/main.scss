@@ -1,0 +1,19 @@
+@import "_abstracts/variables";
+@import "_abstracts/mixins";
+
+@import "_base/_animations.scss";
+@import "_base/_base.scss";
+@import "_base/_typography.scss";
+@import "_base/_utilities.scss";
+
+@import "_components/button.scss";
+@import "_components/shapes";
+@import "_components/information";
+@import "_components/section";
+@import "_components/burger";
+
+@import "_layout/header";
+@import "_layout/about";
+@import "_layout/footer";
+@import "_layout/skills";
+@import "_layout/slider";

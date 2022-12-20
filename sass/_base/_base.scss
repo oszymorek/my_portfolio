@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 70%;
+  }
+  @include respond(notebook) {
+    font-size: 54%;
+  }
+  @include respond(tablet) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+  @include respond(phone-small) {
+    font-size: 20%;
+  }
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: $color-primary-background;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,55 @@
+#section--1 {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(notebook) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 12rem;
+    }
+
+    &__img {
+      width: 50rem;
+
+      @include respond(phone) {
+        width: 75rem;
+      }
+    }
+  }
+  .characteristics {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 12rem;
+
+    @include respond(notebook) {
+      gap: 6.2rem;
+    }
+    @include respond(tablet) {
+      gap: 4.2rem;
+    }
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+      justify-content: space-around;
+      gap: 6rem;
+    }
+
+    &__figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+
+      &__img {
+        width: 4.2rem;
+        height: 4.2rem;
+      }
+    }
+  }
+}

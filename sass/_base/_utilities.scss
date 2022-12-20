@@ -1,0 +1,74 @@
+.color-text {
+  color: $color-primary;
+}
+
+.center-padding {
+  padding: 0 7.2rem;
+  @include respond(notebook) {
+    padding: 0 4.8rem;
+  }
+}
+
+.u-margin-left-small {
+  margin-left: 1.5rem !important;
+}
+
+.u-margin-right-small {
+  margin-right: 1.5rem !important;
+}
+
+.u-margin-right-medium {
+  margin-right: 6rem !important;
+
+  @include respond(notebook) {
+    margin-right: 0 !important;
+  }
+  @include respond(tablet) {
+    margin-right: 0 !important;
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 12rem !important;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 20rem !important;
+}
+
+.display__none--footer {
+  display: none !important;
+  @include respond(notebook) {
+    display: flex !important;
+  }
+  @include respond(tablet) {
+    display: flex !important;
+  }
+}
+
+.display__none--skills {
+  display: none !important;
+}
+
+.display_nav {
+  @include respond(tablet) {
+    display: none !important;
+  }
+}
+
+.display_burger {
+  display: none;
+  @include respond(tablet) {
+    display: block;
+  }
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.color-white-filter {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(48%) saturate(2%)
+    hue-rotate(200deg) brightness(106%) contrast(101%);
+}

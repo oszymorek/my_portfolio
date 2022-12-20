@@ -1,0 +1,97 @@
+#footer {
+  .footer__contact {
+    font-family: "Roboto Mono", sans-serif;
+
+    &__me {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+
+      &--a {
+        color: $color-description;
+        text-decoration: none;
+      }
+
+      @include respond(notebook) {
+        gap: 1.6rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.8rem;
+      }
+      @include respond(tablet) {
+        font-size: 1.8rem;
+      }
+
+      &--img {
+        height: 2.4rem;
+        filter: brightness(0) saturate(100%) invert(92%) sepia(72%)
+          saturate(526%) hue-rotate(82deg) brightness(101%) contrast(104%);
+
+        @include respond(notebook) {
+          height: 2.8rem;
+        }
+        @include respond(tablet) {
+          height: 3.8rem;
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      @include respond(notebook) {
+        gap: 1rem;
+      }
+
+      &--input {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: rgba(29, 41, 69, 0.7);
+        border: 1px solid rgba(100, 255, 218, 0.2);
+        color: $color-description;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $color-description;
+          opacity: 45%;
+          font-size: 1rem;
+          font-family: "Roboto Mono";
+          letter-spacing: 2px;
+        }
+      }
+
+      .btn__submit {
+        font-family: "Roboto Mono", sans-serif;
+        margin-top: 2rem;
+        width: 12rem;
+        background-color: transparent;
+        cursor: pointer;
+        align-self: end;
+        @include respond(phone) {
+          width: 18rem;
+        }
+      }
+
+      .message-size {
+        height: 20rem;
+        resize: none;
+      }
+    }
+  }
+  .created {
+    display: block;
+    font-size: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+    color: $color-description;
+
+    @include respond(tablet) {
+      font-size: 1.2rem;
+    }
+  }
+}

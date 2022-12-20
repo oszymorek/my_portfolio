@@ -1,0 +1,133 @@
+.hamburger {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-card;
+    height: 6.5rem;
+    width: 6.5rem;
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    border-radius: 50%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hamburger__icon {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-primary;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+      }
+
+      &::before {
+        top: -1.2rem;
+      }
+      &::after {
+        top: 1.2rem;
+      }
+    }
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    background-image: radial-gradient(
+      circle,
+      rgba(16, 26, 47, 1) 53%,
+      rgba(10, 25, 47, 1) 100%
+    );
+    z-index: 2;
+
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &__list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      &__item {
+        font-family: "Roboto Mono", sans-serif;
+        margin: 2rem;
+        &--link {
+          &:link,
+          &:visited {
+            letter-spacing: 4px;
+            font-size: 3rem;
+            font-weight: 100;
+            padding: 1rem 2rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(100);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
