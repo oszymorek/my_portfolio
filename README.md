@@ -5,6 +5,8 @@ I present the unfinished design of my website. The main purpose of the site is t
 
 I am still working on the site in my spare time when I am not learning the React.js framework
 
+![](https://geps.dev/progress/75)
+
 ## Roadmap
 
 - Built the structure 
