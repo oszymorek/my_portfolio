@@ -3,7 +3,7 @@
 
 I present the unfinished design of my website. The main purpose of the site is to show how I build pages in pure javascript and using the SASS preprocessor. 
 
-I am still working on the site in my spare time when I am not learning the React.js framework
+I am still working on the site in my spare time when I am not learning the React.js framework.
 
 ![](https://geps.dev/progress/75)
 
