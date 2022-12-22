@@ -30,6 +30,13 @@ Javascript, HTML, SASS
 - Slider of my projects
 - Mobile navbar
 
+## ToFix
+
+- Adjust Responsive Web on mobile
+- Adjust skills component
+- Adjust navbar for mobile
+- Improve animation on site
+
 
 ## Feedback
 
