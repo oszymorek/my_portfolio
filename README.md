@@ -30,13 +30,18 @@ Javascript, HTML, SASS
 - Slider of my projects
 - Mobile navbar
 
-## ToFix
+## To Fix
 
 - Adjust Responsive Web on mobile
 - Adjust skills component
 - Adjust navbar for mobile
 - Improve animation for expand skills and slider
+
+## To Change
+
 - Deploy my photo
+- Separate functions into modules
+- Adjust the naming
 
 
 ## Feedback
