@@ -28,6 +28,7 @@ Javascript, HTML, SASS
 - Smoothy scroll to sections
 - Responsive Design
 - Slider of my projects
+- Mobile navbar
 
 
 ## Feedback
