@@ -5,7 +5,7 @@ I present the unfinished design and code of my website. The main purpose of the 
 
 I am still working on the site in my spare time when I am not learning the React.js framework.
 
-![](https://geps.dev/progress/75)
+![](https://geps.dev/progress/70)
 
 ## Roadmap
 
