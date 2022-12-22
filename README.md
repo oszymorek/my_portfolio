@@ -35,7 +35,7 @@ Javascript, HTML, SASS
 - Adjust Responsive Web on mobile
 - Adjust skills component
 - Adjust navbar for mobile
-- Improve animation on site
+- Improve animation for expand skills and slider
 - Deploy my photo
 
 
