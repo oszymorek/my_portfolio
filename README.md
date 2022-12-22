@@ -36,6 +36,7 @@ Javascript, HTML, SASS
 - Adjust skills component
 - Adjust navbar for mobile
 - Improve animation on site
+- Deploy my photo
 
 
 ## Feedback
